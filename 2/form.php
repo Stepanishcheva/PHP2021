@@ -11,7 +11,7 @@
 <h4>Кроме того, функция должна вывести общее число замен, которое получит из генератора.
     Html код формы ввода должен храниться в отдельном файле, но вызываться всегда должен один и тот же php-скрипт.
 </h4>
-<form action="code.php" method="POST">
+<form action="index.php" method="POST">
     Строка: <input type="text" name="str" /><br><br>
     <input type="submit" value="Отправить">
 </form>
