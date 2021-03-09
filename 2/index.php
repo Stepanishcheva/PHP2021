@@ -1,10 +1,12 @@
 <?php
 $str='';
 if(isset($_POST['str'])) $str = $_POST['str'];
-func($str);
+$ans=func($str);
+echo "<br> Начальная строка: ".$str."<br>Преобразованная строка: ".$ans[0];
+echo "<br>Преобразований: ".$ans[1];
 
-function func($str)
-{
+function func($str){
+
     function gen($str){
         $numb=0;
         $length=strlen($str);
@@ -34,10 +36,14 @@ function func($str)
         }
         return $numb;
     }
-    echo "<br> Начальная строка: ".$str."<br>Преобразованная строка: ";
+
     $generator=gen($str);
+    $ans='';
     foreach($generator as $v)
-        echo $v;
-    echo "<br>Число замен: ".$generator->getReturn();
+        $ans=$ans.$v;
+    $ret=array();
+    $ret[0]=$ans;
+    $ret[1]=$generator->getReturn();
+    return $ret;
 }
 
