@@ -1,0 +1,4 @@
+1st first rule should be upper
+2nd you should see two : 1
+3rd text without whitespaces
+this text doesn't change
