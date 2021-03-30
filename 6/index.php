@@ -28,10 +28,10 @@ foreach ($text as $string) {
         elseif ($second_rule['direction']==='-'){
             $string=strtr($string,'0123456789','9012345678');
         }
-        else echo "Недопустимый знак 2 правила.Возможные значения +/-\t";
+        else echo "Недопустимый знак 2 правила.Возможные значения +/-   ";
     } elseif (strpos($string, $third_rule['symbol']) !== false) {
         if(strlen($third_rule['delete'])!=1){
-            echo "Количество удаляемых символов должно быть равно 1!\t"; }
+            echo "Количество удаляемых символов должно быть равно 1!   "; }
         $string=substr($string,strlen($third_rule['symbol']));
         $string=str_replace($third_rule['delete'], '',$string);
     }
