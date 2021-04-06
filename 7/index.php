@@ -13,6 +13,7 @@
 <?php
 if (isset($_REQUEST['go'])){
     $url=$_REQUEST['address'];
+    $url=escapeshellarg($url);
     if (isset($_REQUEST['toDo'])){$toDo = $_REQUEST['toDo'];}
     else $toDo='';
 
