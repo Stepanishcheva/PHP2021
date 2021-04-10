@@ -11,6 +11,7 @@
     <input type="submit" name="go" value="Отправить!">
 </form>
 <?php
+ini_set('max_execution_time', 300);
 if (isset($_REQUEST['go'])){
     $url=$_REQUEST['address'];
     $url=escapeshellarg($url);
@@ -43,8 +44,7 @@ if (isset($_REQUEST['go'])){
         }
         if(in_array('tracert',$toDo)){
             echo '<br> Tracert :'.$url.'<br>';
-            $n=5;
-            $q=exec("tracert -h $n $url",$ar2,$status2);
+            $q=exec("tracert $url",$ar2,$status2);
             $status2=(int)iconv("cp866","utf-8", $status2);
             if ($status2==0) {
                 $ans2 = array();
@@ -53,11 +53,12 @@ if (isset($_REQUEST['go'])){
                 }
                 preg_match('/(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})/',$ans2[1],$m);
                 echo '<strong> IP: '.$m[0].'</strong><br>';
-                for ($i=4;$i<4+$n;$i++){
+                for ($i=4;$i<count($ans2);$i++){
                     $ip=$ans2[$i];
-                    preg_match('/(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})/',$ip,$m);
-                    //echo $m[0].'<br>';
-                    echo $m[0].' ';
+                    if (preg_match('/(\\d{1,3}\\.\\d{1,3}\\.\\d{1,3}\\.\\d{1,3})/',$ip,$m)==1){
+                        //echo $m[0].'<br>';
+                        echo $m[0].' ';
+                    }
                 }
             }
             else{
