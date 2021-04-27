@@ -1,8 +1,8 @@
 <?php
 namespace ns;
-use Exception;
+require_once ('Exception3.php');
 
-class Exception4 extends Exception
+class Exception4 extends Exception3
 {
 
     public function __construct()
