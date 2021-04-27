@@ -5,17 +5,17 @@ for ($i = 1; $i <= 4; $i++){
     $func=chooseFunction($i);
     try {
         $cl->$func();
-
-    } catch (ns\Exception1 $e) {
-        echo $e->getMessage();
     }
     catch (ns\Exception2 $e) {
         echo $e->getMessage();
     }
-    catch (ns\Exception3 $e) {
+    catch (ns\Exception4 $e) {
         echo $e->getMessage();
     }
-    catch (ns\Exception4 $e) {
+    catch (ns\Exception1 $e) {
+        echo $e->getMessage();
+    }
+    catch (ns\Exception3 $e) {
         echo $e->getMessage();
     }
     catch (ns\Exception5 $e) {
