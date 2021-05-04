@@ -8,7 +8,7 @@ spl_autoload_register(function ($class_name) {
 
 class LoggerPSR3 implements LoggerInterface
 {
-    private  function getJSON($level,$message)
+    private  function getJSON($level,$message):string
     {
         date_default_timezone_set('Europe/Moscow');
         $d=date('H-i  j M Y ');
@@ -17,16 +17,23 @@ class LoggerPSR3 implements LoggerInterface
             'Время записи' => $d,
             'Содержимое' => $message,
         );
-        $json = json_encode($ans, JSON_UNESCAPED_UNICODE);
-        return $json;
+        return json_encode($ans, JSON_UNESCAPED_UNICODE);
     }
     private function writeLog($level,$message)
     {
         $json=$this->getJSON($level,$message);
-        $logFileName='logfile.txt';
-        $f=fopen($logFileName, "w");
-        fwrite($f,$json."\n");
-        fclose($f);
+        $logFileName='logfile.json';
+        $ar=array();
+        if (file_exists($logFileName))
+        {
+            $data=file_get_contents($logFileName);
+            if (strlen($data)!=0) 
+            {
+                $ar = json_decode($data);
+            }
+        }
+        array_push($ar,$json);
+        file_put_contents($logFileName,json_encode($ar, JSON_UNESCAPED_UNICODE));
     }
 
     public function emergency($message, array $context = array())
@@ -75,4 +82,3 @@ class LoggerPSR3 implements LoggerInterface
     }
 
 }
-
