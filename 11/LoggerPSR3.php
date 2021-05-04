@@ -20,57 +20,58 @@ class LoggerPSR3 implements LoggerInterface
         $json = json_encode($ans, JSON_UNESCAPED_UNICODE);
         return $json;
     }
-    private function writeLog($json)
+    private function writeLog($level,$message)
     {
+        $json=$this->getJSON($level,$message);
         $logFileName='logfile.txt';
-        $f=fopen($logFileName, "a");
+        $f=fopen($logFileName, "w");
         fwrite($f,$json."\n");
         fclose($f);
     }
 
     public function emergency($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::EMERGENCY,$message));
+        $this->writeLog(LogLevel::EMERGENCY,$message);
     }
 
     public function alert($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::ALERT,$message));
+        $this->writeLog(LogLevel::ALERT,$message);
     }
 
     public function critical($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::CRITICAL,$message));
+        $this->writeLog(LogLevel::CRITICAL,$message);
     }
 
     public function error($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::ERROR,$message));
+        $this->writeLog(LogLevel::ERROR,$message);
     }
 
     public function warning($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::WARNING,$message));
+        $this->writeLog(LogLevel::WARNING,$message);
     }
 
     public function notice($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::NOTICE,$message));
+        $this->writeLog(LogLevel::NOTICE,$message);
     }
 
     public function info($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::INFO,$message));
+        $this->writeLog(LogLevel::INFO,$message);
     }
 
     public function debug($message, array $context = array())
     {
-        $this->writeLog($this->getJSON(LogLevel::DEBUG,$message));
+        $this->writeLog(LogLevel::DEBUG,$message);
     }
 
     public function log($level, $message, array $context = array())
     {
-        $this->writeLog($this->getJSON($level,$message));
+        $this->writeLog($level,$message);
     }
 
 }
