@@ -1,7 +1,7 @@
 <?php
 $str='';
 if(isset($_POST['str'])) $str = $_POST['str'];
-if (!isset($_COOKIE['str']))
+if ((!isset($_COOKIE['str']))&(strlen($str)!=0))
 {
     setcookie('str',$str);
     post($str);
