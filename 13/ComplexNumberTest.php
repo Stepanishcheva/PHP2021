@@ -149,9 +149,6 @@ class ComplexNumberTest extends TestCase {
     {
         $this->assertEquals($this->BDivIm, $this->cnBig->div($this->cnOnlyIm));
     }
-
-
-
     public function testAbs()
     {
         $this->assertEquals($this->absBig,$this->cnBig->abs());
@@ -173,5 +170,4 @@ class ComplexNumberTest extends TestCase {
     {
         $this->assertEquals(0,$this->cn0->abs());
     }
-
 }
