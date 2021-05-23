@@ -1,0 +1,2195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Documentation</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <base href="../">
+    <link rel="icon" href="images/favicon.ico"/>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/base.css">
+            <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@400;600;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="css/template.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/css/all.min.css" integrity="sha256-ybRkN9dBjhcS2qrW1z+hfCxq+1aBdwyQM5wlQoQVt/0=" crossorigin="anonymous" />
+                <script src="https://cdn.jsdelivr.net/npm/fuse.js@3.4.6"></script>
+        <script src="https://cdn.jsdelivr.net/npm/css-vars-ponyfill@2"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0/js/all.min.js" integrity="sha256-0vuk8LXoyrmCjp1f0O300qo1M75ZQyhH9X3J6d+scmk=" crossorigin="anonymous"></script>
+        <script src="js/search.js"></script>
+        <script defer src="js/searchIndex.js"></script>
+    </head>
+<body id="top">
+    <header class="phpdocumentor-header phpdocumentor-section">
+    <h1 class="phpdocumentor-title"><a href="" class="phpdocumentor-title__link">Documentation</a></h1>
+    <input class="phpdocumentor-header__menu-button" type="checkbox" id="menu-button" name="menu-button" />
+    <label class="phpdocumentor-header__menu-icon" for="menu-button">
+        <i class="fas fa-bars"></i>
+    </label>
+    <section data-search-form class="phpdocumentor-search">
+    <label>
+        <span class="visually-hidden">Search for</span>
+        <svg class="phpdocumentor-search__icon" width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="7.5" cy="7.5" r="6.5" stroke="currentColor" stroke-width="2"/>
+            <line x1="12.4892" y1="12.2727" x2="19.1559" y2="18.9393" stroke="currentColor" stroke-width="3"/>
+        </svg>
+        <input type="search" class="phpdocumentor-field phpdocumentor-search__field" placeholder="Loading .." disabled />
+    </label>
+</section>
+
+    <nav class="phpdocumentor-topnav">
+    <ul class="phpdocumentor-topnav__menu">
+        </ul>
+</nav>
+</header>
+
+    <main class="phpdocumentor">
+        <div class="phpdocumentor-section">
+            <input class="phpdocumentor-sidebar__menu-button" type="checkbox" id="sidebar-button" name="sidebar-button" />
+<label class="phpdocumentor-sidebar__menu-icon" for="sidebar-button">
+    Menu
+</label>
+<aside class="phpdocumentor-column -four phpdocumentor-sidebar">
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Namespaces</h2>
+                                <h3 class="phpdocumentor-sidebar__root-namespace"><a href="namespaces/default.html"><abbr title="\">Global</abbr></a></h3>
+                                    </section>
+
+    
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Reports</h2>
+                <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/deprecated.html">Deprecated</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/errors.html">Errors</a></h3>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="reports/markers.html">Markers</a></h3>
+    </section>
+
+    <section class="phpdocumentor-sidebar__category">
+        <h2 class="phpdocumentor-sidebar__category-header">Indices</h2>
+        <h3 class="phpdocumentor-sidebar__root-package"><a href="indices/files.html">Files</a></h3>
+    </section>
+</aside>
+
+            <div class="phpdocumentor-column -eight phpdocumentor-content">
+                    <ul class="phpdocumentor-breadcrumbs">
+            <li class="phpdocumentor-breadcrumb"><a href="packages/Default.html">Default</a></li>
+    </ul>
+
+    <article class="phpdocumentor-element -class">
+        <h2 class="phpdocumentor-content__title">
+    ComplexNumberTest
+
+        <span class="phpdocumentor-element__extends">
+        extends <abbr title="\PHPUnit\Framework\TestCase">TestCase</abbr>
+    </span>
+    
+    
+    
+    </h2>
+
+        <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">5</span>
+</aside>
+
+        
+
+
+
+
+
+
+
+
+<h3 id="toc">
+    Table of Contents
+    <a href="#toc" class="headerlink"><i class="fas fa-link"></i></a>
+</h3>
+
+<dl class="phpdocumentor-table-of-contents">
+                <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_absBig">$absBig</a>
+    <span>
+                &nbsp;: float            </span>
+</dt>
+<dd>Expected modulus of a complex number cnBig</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BAddIm">$BAddIm</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of adding complex number with complex number with only imaginary part (cnBig+cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BAddNeg">$BAddNeg</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of adding two complex numbers (cnBig+cnNeg)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BAddRe">$BAddRe</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of adding complex number with complex number with only real part (cnBig+cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BAddS">$BAddS</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of adding two complex numbers (cnBig+cnSmall)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BDivIm">$BDivIm</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of dividing complex numbers by complex number with only imaginary part (cnBig/cnOnlyIm)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BDivNeg">$BDivNeg</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of dividing complex numbers by complex number with negative imaginary and real part (cnBig/cnOnlyIm)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BDivRe">$BDivRe</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of dividing complex numbers by complex number with only real part (cnBig+cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BDivS">$BDivS</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of dividing two complex numbers (cnBig/cnSmall)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BMultIm">$BMultIm</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of multiplying a complex number by complex number with only imaginary part (cnBig*cnOnlyIm)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BMultNeg">$BMultNeg</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of multiplying two complex numbers (cnBig*cnNeg)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BMultRe">$BMultRe</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of multiplying a complex number by complex number with only real part (cnBig*cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BMultS">$BMultS</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of multiplying two complex numbers (cnBig*cnSmall)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BSubIm">$BSubIm</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of subtracting two complex numbers (cnBig-cnOnlyIm)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BSubNeg">$BSubNeg</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of subtracting two complex numbers (cnBig-cnNeg)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BSubRe">$BSubRe</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of subtracting two complex numbers (cnBig-cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_BSubS">$BSubS</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Expected result of subtracting two complex numbers (cnBig-cnSmall)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_cn0">$cn0</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Complex number equals 0</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_cnBig">$cnBig</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Complex number, bigger than cnSmall</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_cnFrom1Numb">$cnFrom1Numb</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Complex number constructed from one number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_cnNeg">$cnNeg</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Complex number with negative real part and negative imaginary part</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_cnOnlyIm">$cnOnlyIm</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Complex number with only imaginary part</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_cnOnlyRe">$cnOnlyRe</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Complex number with only real part</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -property -protected">
+    <a href="classes/ComplexNumberTest.html#property_cnSmall">$cnSmall</a>
+    <span>
+                &nbsp;: <a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a>            </span>
+</dt>
+<dd>Complex number, smaller than cnBig</dd>
+
+                <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAbs">testAbs()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the module function of a complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAbsNeg">testAbsNeg()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the module function of a complex number with negative parts</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAbsOnlyIm">testAbsOnlyIm()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the module function of a complex number with only imaginary</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAbsOnlyRe">testAbsOnlyRe()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the module function of a complex number with only real part</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAbsZero">testAbsZero()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the module function of a zero complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAdd0">testAdd0()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the complex number and zero addition function</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAddComplexNumber">testAddComplexNumber()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the addition two complex numbers (cnBig+cnSmall)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAddIm">testAddIm()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the complex number and complex number with only imaginary part addition function</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAddNeg">testAddNeg()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the complex number and complex number with negative parts addition function</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testAddRe">testAddRe()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the complex number and complex number with only real part addition function</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testConstructorWith1Arg">testConstructorWith1Arg()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing a constructor with 1 parameter</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testDivIm">testDivIm()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of dividing a complex number by complex number with only imaginary part (cnBig/cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testDivNeg">testDivNeg()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of dividing a complex number by complex number with negative parts (cnBig/cnNeg)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testDivRe">testDivRe()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of dividing a complex number by complex number with only real part (cnBig/cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testDivWithComplexNumber">testDivWithComplexNumber()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of dividing a complex number by complex number(cnBig/cnSmall)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testDivZero">testDivZero()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of dividing a complex number by complex number(cnBig/0)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testMultWith0">testMultWith0()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of multiplying a complex number by zero</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testMultWithComplexNumber">testMultWithComplexNumber()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of multiplying a complex number by a complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testMultWithIm">testMultWithIm()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of multiplying a complex number by a complex number with imaginary parts (cnBig/cnOnlyIm)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testMultWithNeg">testMultWithNeg()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of multiplying a complex number by a complex number with negative parts</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testMultWithRe">testMultWithRe()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of multiplying a complex number by a complex number with only real parts (cnBig/cnOnlyRe)</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testSub0">testSub0()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of subtracting 0 from a complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testSubComplexNumber">testSubComplexNumber()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of subtracting complex number from another complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testSubIm">testSubIm()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of subtracting a complex number with only imaginary parts from a complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testSubNeg">testSubNeg()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of subtracting a complex number with negative parts from a complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/ComplexNumberTest.html#method_testSubRe">testSubRe()</a>
+    <span>
+                        &nbsp;: mixed    </span>
+</dt>
+<dd>Testing the function of subtracting a complex number with only real parts from a complex number</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -protected">
+    <a href="classes/ComplexNumberTest.html#method_setUp">setUp()</a>
+    <span>
+                        &nbsp;: void    </span>
+</dt>
+<dd>The function that is run before the test is run.</dd>
+
+        </dl>
+
+
+
+        
+
+        
+    <section class="phpdocumentor-properties">
+        <h3 class="phpdocumentor-elements__header" id="properties">
+            Properties
+            <a href="classes/ComplexNumberTest.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_absBig">
+        $absBig
+        <a href="classes/ComplexNumberTest.html#property_absBig" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">61</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected modulus of a complex number cnBig</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type">float</span>
+    <span class="phpdocumentor-signature__name">$absBig</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BAddIm">
+        $BAddIm
+        <a href="classes/ComplexNumberTest.html#property_BAddIm" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">105</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of adding complex number with complex number with only imaginary part (cnBig+cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BAddIm</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BAddNeg">
+        $BAddNeg
+        <a href="classes/ComplexNumberTest.html#property_BAddNeg" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">74</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of adding two complex numbers (cnBig+cnNeg)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BAddNeg</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BAddRe">
+        $BAddRe
+        <a href="classes/ComplexNumberTest.html#property_BAddRe" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">98</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of adding complex number with complex number with only real part (cnBig+cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BAddRe</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BAddS">
+        $BAddS
+        <a href="classes/ComplexNumberTest.html#property_BAddS" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">44</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of adding two complex numbers (cnBig+cnSmall)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BAddS</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BDivIm">
+        $BDivIm
+        <a href="classes/ComplexNumberTest.html#property_BDivIm" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">116</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of dividing complex numbers by complex number with only imaginary part (cnBig/cnOnlyIm)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BDivIm</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BDivNeg">
+        $BDivNeg
+        <a href="classes/ComplexNumberTest.html#property_BDivNeg" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">146</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of dividing complex numbers by complex number with negative imaginary and real part (cnBig/cnOnlyIm)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BDivNeg</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BDivRe">
+        $BDivRe
+        <a href="classes/ComplexNumberTest.html#property_BDivRe" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">110</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of dividing complex numbers by complex number with only real part (cnBig+cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BDivRe</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BDivS">
+        $BDivS
+        <a href="classes/ComplexNumberTest.html#property_BDivS" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">50</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of dividing two complex numbers (cnBig/cnSmall)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BDivS</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BMultIm">
+        $BMultIm
+        <a href="classes/ComplexNumberTest.html#property_BMultIm" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">122</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of multiplying a complex number by complex number with only imaginary part (cnBig*cnOnlyIm)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BMultIm</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BMultNeg">
+        $BMultNeg
+        <a href="classes/ComplexNumberTest.html#property_BMultNeg" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">92</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of multiplying two complex numbers (cnBig*cnNeg)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BMultNeg</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BMultRe">
+        $BMultRe
+        <a href="classes/ComplexNumberTest.html#property_BMultRe" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">128</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of multiplying a complex number by complex number with only real part (cnBig*cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BMultRe</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BMultS">
+        $BMultS
+        <a href="classes/ComplexNumberTest.html#property_BMultS" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">86</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of multiplying two complex numbers (cnBig*cnSmall)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BMultS</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BSubIm">
+        $BSubIm
+        <a href="classes/ComplexNumberTest.html#property_BSubIm" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">140</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of subtracting two complex numbers (cnBig-cnOnlyIm)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BSubIm</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BSubNeg">
+        $BSubNeg
+        <a href="classes/ComplexNumberTest.html#property_BSubNeg" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">80</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of subtracting two complex numbers (cnBig-cnNeg)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BSubNeg</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BSubRe">
+        $BSubRe
+        <a href="classes/ComplexNumberTest.html#property_BSubRe" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">134</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of subtracting two complex numbers (cnBig-cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BSubRe</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_BSubS">
+        $BSubS
+        <a href="classes/ComplexNumberTest.html#property_BSubS" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">56</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Expected result of subtracting two complex numbers (cnBig-cnSmall)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$BSubS</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cn0">
+        $cn0
+        <a href="classes/ComplexNumberTest.html#property_cn0" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">27</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Complex number equals 0</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cn0</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cnBig">
+        $cnBig
+        <a href="classes/ComplexNumberTest.html#property_cnBig" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">33</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Complex number, bigger than cnSmall</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cnBig</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cnFrom1Numb">
+        $cnFrom1Numb
+        <a href="classes/ComplexNumberTest.html#property_cnFrom1Numb" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">15</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Complex number constructed from one number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cnFrom1Numb</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cnNeg">
+        $cnNeg
+        <a href="classes/ComplexNumberTest.html#property_cnNeg" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">68</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Complex number with negative real part and negative imaginary part</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cnNeg</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cnOnlyIm">
+        $cnOnlyIm
+        <a href="classes/ComplexNumberTest.html#property_cnOnlyIm" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">21</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Complex number with only imaginary part</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cnOnlyIm</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cnOnlyRe">
+        $cnOnlyRe
+        <a href="classes/ComplexNumberTest.html#property_cnOnlyRe" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">10</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Complex number with only real part</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cnOnlyRe</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+                    <article
+        class="
+            phpdocumentor-element
+            -property
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="property_cnSmall">
+        $cnSmall
+        <a href="classes/ComplexNumberTest.html#property_cnSmall" class="headerlink"><i class="fas fa-link"></i></a>
+        <span class="phpdocumentor-element__modifiers">
+                                </span>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">38</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Complex number, smaller than cnBig</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+        <span class="phpdocumentor-signature__type"><a href="classes/ComplexNumber.html"><abbr title="\ComplexNumber">ComplexNumber</abbr></a></span>
+    <span class="phpdocumentor-signature__name">$cnSmall</span>
+    </code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+
+</article>
+            </section>
+
+            <section class="phpdocumentor-methods">
+        <h3 class="phpdocumentor-elements__header" id="methods">
+            Methods
+            <a href="classes/ComplexNumberTest.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+        </h3>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAbs">
+        testAbs()
+        <a href="classes/ComplexNumberTest.html#method_testAbs" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">358</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the module function of a complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAbs</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAbsNeg">
+        testAbsNeg()
+        <a href="classes/ComplexNumberTest.html#method_testAbsNeg" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">366</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the module function of a complex number with negative parts</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAbsNeg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAbsOnlyIm">
+        testAbsOnlyIm()
+        <a href="classes/ComplexNumberTest.html#method_testAbsOnlyIm" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">381</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the module function of a complex number with only imaginary</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAbsOnlyIm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAbsOnlyRe">
+        testAbsOnlyRe()
+        <a href="classes/ComplexNumberTest.html#method_testAbsOnlyRe" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">374</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the module function of a complex number with only real part</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAbsOnlyRe</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAbsZero">
+        testAbsZero()
+        <a href="classes/ComplexNumberTest.html#method_testAbsZero" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">389</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the module function of a zero complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAbsZero</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAdd0">
+        testAdd0()
+        <a href="classes/ComplexNumberTest.html#method_testAdd0" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">199</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the complex number and zero addition function</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAdd0</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAddComplexNumber">
+        testAddComplexNumber()
+        <a href="classes/ComplexNumberTest.html#method_testAddComplexNumber" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">191</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the addition two complex numbers (cnBig+cnSmall)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAddComplexNumber</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAddIm">
+        testAddIm()
+        <a href="classes/ComplexNumberTest.html#method_testAddIm" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">223</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the complex number and complex number with only imaginary part addition function</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAddIm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAddNeg">
+        testAddNeg()
+        <a href="classes/ComplexNumberTest.html#method_testAddNeg" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">207</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the complex number and complex number with negative parts addition function</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAddNeg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testAddRe">
+        testAddRe()
+        <a href="classes/ComplexNumberTest.html#method_testAddRe" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">215</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the complex number and complex number with only real part addition function</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testAddRe</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testConstructorWith1Arg">
+        testConstructorWith1Arg()
+        <a href="classes/ComplexNumberTest.html#method_testConstructorWith1Arg" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">183</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing a constructor with 1 parameter</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testConstructorWith1Arg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testDivIm">
+        testDivIm()
+        <a href="classes/ComplexNumberTest.html#method_testDivIm" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">349</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of dividing a complex number by complex number with only imaginary part (cnBig/cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testDivIm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testDivNeg">
+        testDivNeg()
+        <a href="classes/ComplexNumberTest.html#method_testDivNeg" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">334</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of dividing a complex number by complex number with negative parts (cnBig/cnNeg)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testDivNeg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testDivRe">
+        testDivRe()
+        <a href="classes/ComplexNumberTest.html#method_testDivRe" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">342</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of dividing a complex number by complex number with only real part (cnBig/cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testDivRe</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testDivWithComplexNumber">
+        testDivWithComplexNumber()
+        <a href="classes/ComplexNumberTest.html#method_testDivWithComplexNumber" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">312</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of dividing a complex number by complex number(cnBig/cnSmall)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testDivWithComplexNumber</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testDivZero">
+        testDivZero()
+        <a href="classes/ComplexNumberTest.html#method_testDivZero" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">320</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of dividing a complex number by complex number(cnBig/0)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testDivZero</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testMultWith0">
+        testMultWith0()
+        <a href="classes/ComplexNumberTest.html#method_testMultWith0" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">281</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of multiplying a complex number by zero</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testMultWith0</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testMultWithComplexNumber">
+        testMultWithComplexNumber()
+        <a href="classes/ComplexNumberTest.html#method_testMultWithComplexNumber" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">273</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of multiplying a complex number by a complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testMultWithComplexNumber</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testMultWithIm">
+        testMultWithIm()
+        <a href="classes/ComplexNumberTest.html#method_testMultWithIm" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">304</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of multiplying a complex number by a complex number with imaginary parts (cnBig/cnOnlyIm)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testMultWithIm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testMultWithNeg">
+        testMultWithNeg()
+        <a href="classes/ComplexNumberTest.html#method_testMultWithNeg" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">288</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of multiplying a complex number by a complex number with negative parts</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testMultWithNeg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testMultWithRe">
+        testMultWithRe()
+        <a href="classes/ComplexNumberTest.html#method_testMultWithRe" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">296</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of multiplying a complex number by a complex number with only real parts (cnBig/cnOnlyRe)</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testMultWithRe</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testSub0">
+        testSub0()
+        <a href="classes/ComplexNumberTest.html#method_testSub0" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">239</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of subtracting 0 from a complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testSub0</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testSubComplexNumber">
+        testSubComplexNumber()
+        <a href="classes/ComplexNumberTest.html#method_testSubComplexNumber" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">231</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of subtracting complex number from another complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testSubComplexNumber</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testSubIm">
+        testSubIm()
+        <a href="classes/ComplexNumberTest.html#method_testSubIm" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">264</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of subtracting a complex number with only imaginary parts from a complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testSubIm</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testSubNeg">
+        testSubNeg()
+        <a href="classes/ComplexNumberTest.html#method_testSubNeg" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">248</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of subtracting a complex number with negative parts from a complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testSubNeg</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -public
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_testSubRe">
+        testSubRe()
+        <a href="classes/ComplexNumberTest.html#method_testSubRe" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">256</span>
+</aside>
+
+        <p class="phpdocumentor-summary">Testing the function of subtracting a complex number with only real parts from a complex number</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">public</span>
+                <span class="phpdocumentor-signature__name">testSubRe</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">mixed</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+                    <article
+        class="phpdocumentor-element
+            -method
+            -protected
+                                                        "
+>
+    <h4 class="phpdocumentor-element__name" id="method_setUp">
+        setUp()
+        <a href="classes/ComplexNumberTest.html#method_setUp" class="headerlink"><i class="fas fa-link"></i></a>
+    </h4>
+    <aside class="phpdocumentor-element-found-in">
+    <abbr class="phpdocumentor-element-found-in__file" title="src/ComplexNumberTest.php"><a href="files/src-complexnumbertest.html"><abbr title="src/ComplexNumberTest.php">ComplexNumberTest.php</abbr></a></abbr>
+    :
+    <span class="phpdocumentor-element-found-in__line">151</span>
+</aside>
+
+        <p class="phpdocumentor-summary">The function that is run before the test is run.</p>
+
+    <code class="phpdocumentor-code phpdocumentor-signature ">
+    <span class="phpdocumentor-signature__visibility">protected</span>
+                <span class="phpdocumentor-signature__name">setUp</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+
+        <section class="phpdocumentor-description"></section>
+
+    
+    
+
+        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
+    <span class="phpdocumentor-signature__response_type">void</span>
+            &mdash;
+            <section class="phpdocumentor-description"></section>
+
+    
+</article>
+            </section>
+
+    </article>
+                <section data-search-results class="phpdocumentor-search-results phpdocumentor-search-results--hidden">
+    <section class="phpdocumentor-search-results__dialog">
+        <header class="phpdocumentor-search-results__header">
+            <h2 class="phpdocumentor-search-results__title">Search results</h2>
+            <button class="phpdocumentor-search-results__close"><i class="fas fa-times"></i></button>
+        </header>
+        <section class="phpdocumentor-search-results__body">
+            <ul class="phpdocumentor-search-results__entries"></ul>
+        </section>
+    </section>
+</section>
+            </div>
+        </div>
+        <a href="classes/ComplexNumberTest.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+
+    </main>
+
+    <script>
+        cssVars({});
+    </script>
+</body>
+</html>
