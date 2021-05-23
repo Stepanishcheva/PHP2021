@@ -1,0 +1,15 @@
+{
+  "name": "vendor_name/doc",
+  "description": "description",
+  "minimum-stability": "stable",
+  "license": "proprietary",
+  "authors": [
+    {
+      "name": "AnSt",
+      "email": "email@example.com"
+    }
+  ],
+  "require": {
+    "phpdocumentor/phpdocumentor": "v3.0.0"
+  }
+}
